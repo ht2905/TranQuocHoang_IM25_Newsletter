@@ -12,9 +12,9 @@ format:
     # theme: materia # <--- Choose your theme. HTML only.
     # tabsets: true # Useless for docx
     editor: source
-    reference-doc: custom-ref.docx # docx only.
-toc: true
-toc-depth: 3
+    reference-doc: custom-ref-apa.docx # docx only.
+# toc: true # might need this
+# toc-depth: 3 # might need this
 number-sections: true
 highlight-style: zenburn
 fig-cap-location: top
@@ -30,14 +30,12 @@ Research Question: What specific pharmacological or therapeutic interventions ar
 -->
 ```
 
-# Introduction
+## Introduction
 
 This is the start of the document content...
 
-### dadaw
+## Mechanism of Damage: The MP-Immune Axis
 
-Content for the first tab goes here.
+## Therapeutic Strategies: Mitigating MP-Induced Inflammation
 
-### Safgtfr
-
-Content for the second tab goes here.
+## Conclusion and Future Directions
