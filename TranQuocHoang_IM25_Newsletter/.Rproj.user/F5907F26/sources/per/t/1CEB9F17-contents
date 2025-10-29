@@ -1,0 +1,34 @@
+---
+title: "TranQuocHoang_IM25_Newsletter"
+title-block-banner: "#3a6998"
+author:
+  - name: "Tran Quoc Hoang, Student ID: BTBTWE24036" 
+    # affiliation: "Student ID: BTBTWE24036". This line does not work in Word format.
+    email: BTBTWE24036@student.hcmiu.edu.vn
+date: today
+date-format: MM-DD-YYYY
+format:
+  docx:
+    theme: materia # <--- Choose your theme here
+    editor: source
+    reference-doc: custom-ref.docx
+editor: source
+toc: true
+toc-depth: 3
+number-sections: true
+highlight-style: zenburn
+fig-cap-location: top
+geometry: margin=1in
+---
+
+# Introduction
+
+This is the start of the document content... \## dawdadw
+
+### dadaw
+
+Content for the first tab goes here.
+
+### Safgtfr
+
+Content for the second tab goes here.
