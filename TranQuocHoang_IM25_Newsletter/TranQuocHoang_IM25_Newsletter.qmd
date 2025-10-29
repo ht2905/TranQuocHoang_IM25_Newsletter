@@ -13,7 +13,6 @@ format:
     # tabsets: true # Useless for docx
     editor: source
     reference-doc: custom-ref.docx # docx only.
-editor: source
 toc: true
 toc-depth: 3
 number-sections: true
@@ -22,9 +21,16 @@ fig-cap-location: top
 geometry: margin=1in
 ---
 
+```{=html}
+<!--
+Current Chosen Topic: The Immunological Effects of Microplastics.
+Focus: How the chronic ingestion or inhalation of microplastics (Mikroplastik)—a ubiquitous environmental pollutant—affects gut immunity (Darmimmunität) and systemic inflammatory responses.
+-->
+```
+
 # Introduction
 
-This is the start of the document content... \## dawdadw
+This is the start of the document content...
 
 ### dadaw
 
