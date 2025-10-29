@@ -1,0 +1,4 @@
+[1,"==> quarto preview TranQuocHoang_IM25_Newsletter.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"pandoc \n  to: html\n  output-file: TranQuocHoang_IM25_Newsletter.html\n  standalone: true\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  variables: {}\n  \nmetadata\n  document-css: false\n  link-citations: true\n  lang: en\n  editor: source\n  title: TranQuocHoang_IM25_Newsletter\n  title-block-banner: true\n  author:\n    - name: Tran Quoc Hoang\n      affiliation: 'Student ID: BTBTWE24036'\n      email: BTBTWE24036@student.hcmiu.edu.vn\n  date: today\n  date-format: MM-DD-YYYY\n  theme: materia\n  tabsets: true\n  \n"]
+[1,"Output created: TranQuocHoang_IM25_Newsletter.html\n\nWatching files for changes\n"]
+[1,"Browse at http://localhost:3491/TranQuocHoang_IM25_Newsletter.html\n"]
