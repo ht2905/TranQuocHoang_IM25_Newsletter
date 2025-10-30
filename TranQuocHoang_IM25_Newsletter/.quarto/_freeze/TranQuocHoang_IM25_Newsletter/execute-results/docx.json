@@ -1,0 +1,15 @@
+{
+  "hash": "56e0fedab19e19a23fde2e437ad06069",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"The Ubiquitous Threat: Chronic Microplastic Exposure Perturbs Gut Immunity (Darmimmunität) and Drives Systemic Inflammation\" # Cringey placeholder Title\ntitle-block-banner: \"#3a6998\" # Useless for docx\n# author: # not used for docx\n#  - name: \"Tran Quoc Hoang\" \n#    affiliation: \"Student ID: BTBTWE24036\"\n#    email: BTBTWE24036@student.hcmiu.edu.vn\ncourse: \"dwajiw\" # <-- YOUR CUSTOM VARIABLE\ndate: today\ndate-format: MM-DD-YYYY\nformat:\n  docx: # alternatively use pdf/html\n    # theme: materia # <--- Choose your theme. HTML only.\n    # tabsets: true # Useless for docx\n    editor: source\n    reference-doc: custom-ref-apa.docx # docx only.\n    title-block-style: none\n# toc: true # might need this\n# toc-depth: 3 # might need this\n# number-sections: true # APA does not allow numbering\nhighlight-style: zenburn\nfig-cap-location: top\ngeometry: margin=1in\n---\n\n<p style='text-align:center;'># **The Ubiquitous Threat: Chronic Microplastic Exposure Perturbs Gut Immunity (Darmimmunität) and Drives Systemic Inflammation**\n\n\n\n\n\n**Course:** dwajiw\n\n**Date:** today\n\n</p>\\newpage\n\n```{=html}\n<!--\nCurrent Chosen Topic: The Immunological Effects of Microplastics.\nFocus: How the chronic ingestion or inhalation of microplastics (Mikroplastik)—a ubiquitous environmental pollutant—affects gut immunity (Darmimmunität) and systemic inflammatory responses.\n\nResearch Question: What specific pharmacological or therapeutic interventions are currently being researched to reverse or mitigate microplastic-induced chronic inflammation within the human gut-associated lymphoid tissue (GALT)?\n-->\n```\n\n```{=html}\n<!--\nIntroduction Heading not required as per APA standard.\"Because the first paragraphs of a paper are understood to be introductory, the heading 'Introduction' is not needed. Do not begin a paper with an 'Introduction'heading; the paper title at the top of the first page of text acts as a de facto Level 1 heading.\" Though, on second thought, I will still include Introduction heading in case the TA is ignorant of the correct formatting.\n-->\n```\n\n# Introduction\n\nThis is the start of the document content...\n\n# Mechanism of Damage: The MP-Immune Axis\n\n# Therapeutic Strategies: Mitigating MP-Induced Inflammation\n\n# Conclusion and Future Directions\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
