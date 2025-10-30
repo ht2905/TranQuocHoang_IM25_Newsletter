@@ -1,5 +1,8 @@
 project:
   title: "TranQuocHoang_IM25_Newsletter"
-
-editor: visual
+author: ["Tran Quoc Hoang, Student ID: BTBTWE24036", "School of Biotechnology, International University, Vietnam National University Ho Chi Minh City", "BT335IU: Immunology", "Assoc. Prof. Hoai T. T. Nguyen"]
+#  affiliation: "International University, VNU-HCM" # Useless in Word
+date: today
+date-format: MM-DD-YYYY
+editor: source
 
