@@ -1,7 +1,8 @@
 {
   "TranQuocHoang_IM25_Newsletter.qmd": {
     "TranQuocHoang_IM25_Newsletter.html": "a200c1d9",
-    "TranQuocHoang_IM25_Newsletter.docx": "f5bcbf99"
+    "TranQuocHoang_IM25_Newsletter.docx": "f5bcbf99",
+    "TranQuocHoang_IM25_Newsletter.tex": "f9c4ed9f"
   },
   "title-block.qmd": {
     "title-block.html": "d3fd8562"
@@ -11,5 +12,11 @@
   },
   "title-page.md": {
     "title-page.html": "9c1738cd"
+  },
+  "apa_template/apa_template.qmd": {
+    "apa_template.docx": "f3dfaed8",
+    "apa_template.html": "6486407b",
+    "apa_template.typ": "40f79bfe",
+    "apa_template.tex": "25e9d496"
   }
 }
