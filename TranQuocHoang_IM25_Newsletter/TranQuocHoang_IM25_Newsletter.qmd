@@ -29,7 +29,7 @@ note: |
   Student ID: BTBTWE24036
 abstract: |
   The abstract for this paper is not required for this assignment.
-keywords: [microplastics, immunity, neuroinflammation]
+keywords: [Microplastic, Microparticles, Nanoplastic, Nanoparticles, Neuroinflammation, Microglia, Environmental Pollution]
 suppress-author-note: true
 suppress-orcid: true
 floatsintext: true
@@ -83,7 +83,7 @@ One primary hypothesized mechanism involves the direct interaction of MNPs with 
 
 ## Inflammasome Pathway
 
-As a direct consequence of frustrated phagocytosis, an important inflammatory cascade is triggered: the NLRP3 Inflammasome. This complex is an intracellular receptor that senses danger signals, such as lysosomal rupture and the formation of reactive oxygen species (ROS), both of which are common outcomes of MP/NP internalisation by body cells. Activation of the NLRP3 inflammasome leads to the cleavage of pro-caspase-1 into active caspase-1. This activated enzyme, in turn, causes the maturation and release of pro-inflammatory cytokines, namely, Interleukin-1$\beta$ (IL-1$\beta$) and Interleukin-18 (IL-18) [@harrisonChiasmaRochePartner2013; @matousekChronicIL1vmediatedNeuroinflammation2012]. These cytokines further propagate the inflammatory signal, recruiting additional immune cells and intensifying the neuroinflammatory cycle—contributing directly to neuronal injury [@delantoniMaxillofacialInflammationsVisualized2023].
+As a direct consequence of frustrated phagocytosis, an important inflammatory cascade is triggered: the NLRP3 Inflammasome. This complex is an intracellular receptor that senses danger signals, such as lysosomal rupture and the formation of reactive oxygen species—which are both outcomes of MP/NP internalisation. Activation of the NLRP3 inflammasome leads to the cleavage of pro-caspase-1 into active caspase-1. This activated enzyme, in turn, causes the maturation and release of pro-inflammatory cytokines, namely, Interleukin-1$\beta$ (IL-1$\beta$) and Interleukin-18 (IL-18) [@harrisonChiasmaRochePartner2013; @matousekChronicIL1vmediatedNeuroinflammation2012]. These cytokines further propagate the inflammatory signal, recruiting additional immune cells and intensifying the neuroinflammatory cycle—contributing directly to neuronal injury [@delantoniMaxillofacialInflammationsVisualized2023].
 
 ## Indirect Disruption via Gut-Brain Axis
 
@@ -112,5 +112,23 @@ Micro- and nanoplastic (MNP) exposure is a modern, global issue that requires an
 The evidence and analysis presented here demonstrates that MNPs are more than environmental contaminants—they are also significant neurotoxic agents, capable of long-term harm to both humans and animals alike. Their ubiquitous presence, combined with the alarming capability of nanoplastics to traverse biological barriers establishes a grave threat to CNS health. A sustained neuroinflammatory state caused by frustrated phagocytosis, NLRP3 inflammasome activation, and HPA axis dysregulation manifests as behavioral deficits and cognitive impairment. This proves that MNP exposure extends far beyond localized cellular damage.
 
 Moving forward, a multi-disciplinary approach is crucial to translate these mechanistic findings into actionable public health strategies. Future research should work on large-scale human epidemiological studies to correlate MNP body burden with specific neurological and cognitive outcomes. There is also an urgent need for targeted therapeutic development focused on decoupling inflammatory signaling from the presence of non-degradable particles; BBB-permeable NLRP3 Inflammasome inhibitors should be a good starting point. Further mechanistic work must precisely characterize the inflammatory signals that transmit neurotoxicity from the peripheral gut to the CNS, in order to identify specific signaling molecules that trigger secondary microglial activation. Finally, to accurately reflect real-world exposure, future investigations must move beyond pristine polystyrene and prioritize the toxicity assessment of environmentally-aged and chemically-altered MNPs. While targeted biomedical interventions offer hope, the most effective long-term solution is proactive, globally-coordinated prevention to dramatically reduce plastic production and environmental dissemination.
+
+# Abbreviations
+
+| Abbreviation | Full Term |
+| :--- | :--- |
+| **BBB** | Blood-Brain Barrier |
+| **CNS** | Central Nervous System |
+| **GBA** | Gut-Brain-Axis |
+| **GR** | Glucocorticoid Receptor |
+| **HPA** | Hypothalamic-Pituitary-Adrenal |
+| **IL-1$\beta$** | Interleukin-1$\beta$ |
+| **IL-6** | Interleukin-6 |
+| **IL-18** | Interleukin-18 |
+| **MNPs** | Micro- and Nanoplastics |
+| **MPs** | Microplastics |
+| **NPs** | Nanoplastics |
+| **ROS** | Reactive Oxygen Species |
+| **TNF-$\alpha$** | Tumor Necrosis Factor-$\alpha$ |
 
 # References
