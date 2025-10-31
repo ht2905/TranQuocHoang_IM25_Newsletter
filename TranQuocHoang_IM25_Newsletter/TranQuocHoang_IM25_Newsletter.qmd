@@ -3,9 +3,10 @@ title: "Placeholder 'cause old one was too cringey"
 
 format:
   apaquarto-docx: default
-  apaquarto-pdf:
-    documentmode: stu
-date: today
+#  apaquarto-pdf:
+#    documentmode: stu
+
+date: last-modified
 date-format: MM-DD-YYYY
 bibliography: IM25_Newsletter.bib
 
@@ -31,6 +32,7 @@ abstract: |
 keywords: [microplastics, immunity, neuroinflammation]
 suppress-author-note: true
 suppress-orcid: true
+floatsintext: true
 ---
 
 ```{=html}
@@ -43,18 +45,28 @@ Research Question: How do Nanoplastics (NPs) disrupt the Neuro-Immune Axis in th
 
 # Introduction
 
-This is the start of the document content...
+First named by [@thompsonLostSeaWhere2004], microplastics are defined as particles with diameters from $\textrm{1}\ \mu \text{m}$ to $\textrm{5}\ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1}\ \mu \text{m}$.
 
 # MP Transport and Crossing the Blood-Brain Barrier (BBB)
 
-This is illustrated well by @fig-entry-routes
+Lorem ipsum...
 
 ## Routes of Entry
+
+Micro- and nanoplastics (MPs/NPs) enter the body via several primary routes of entry. The most prevalent pathways are ingestion—mainly from contaminated food and drinking water, which are almost everywhere in modern times—and inhalation—often from airborne particles such as indoor dust and synthetic clothing fibers. While dermal absorption remains a possibility, it is generally considered a less significant route. @fig-entry-routes depicts in detail how MNPs travel to the brain from outside. Recent research discovered that nanoplastics appear to be the most dangerous in terms of systemic effects, as their diminutive size facilitates rapid entrance into the bloodstream and distribution throughout the body [@kopatzMicroNanoplasticsBreach2023].
+
+![Environmental Sources and MNPs' Pathways to the Brain](images/entry-routes.jpeg){#fig-entry-routes width="6.5in" fig-alt="Environmental Sources and MNPs' Pathways to the Brain" apa-note="This diagram showcases the types of plastics, where they come from, and how they enter the body. The American Plastics Industry Association created the SPI code (SPI-Code) to provide a standard method for classifying plastics. Nanoplastics are best at traversing through the BBB into the brain due to their diminutive size. Reprinted from Ma, Q., Lei, J., Pang, Y., Shen, Y., & Zhang, T. (2025). Neurotoxicity of Micro- and Nanoplastics: A Comprehensive Review of Central Nervous System Impacts. Environment & Health. https://doi.org/10.1021/envhealth.5c00087."}
+
+## Blood-Brain Barrier Structure
+
+The central nervous system has a sophisticated shield called the Blood-Brain Barrier (BBB) that separates brain matter from the rest of the body. This structure is formed by specialized cerebral endothelial cells connected by tight junctions, along with pericytes and astrocytes [@mcconnellCellsBloodbrainBarrier2022]. The BBB effectively limits the passage of foreign substances, pathogens, and large molecules from the circulatory system past the outer brain layer, which helps maintain the neural microenvironment's homeostasis.
+
+## Translocation Hypotheses
+
+As suc
 
 # Microglial Activation and Neuroinflammation
 
 # Consequences and Future Directions
 
 # References
-
-![Environmental sources and human exposure of MNPs.](images/entry-routes.jpeg){#fig-entry-routes fig-alt="Environmental sources and human exposure of MNPs." apa-note="Reprinted from Ma, Q., Lei, J., Pang, Y., Shen, Y., & Zhang, T. (2025). Neurotoxicity of Micro- and Nanoplastics: A Comprehensive Review of Central Nervous System Impacts. Environment & Health. https://doi.org/10.1021/envhealth.5c00087."}
