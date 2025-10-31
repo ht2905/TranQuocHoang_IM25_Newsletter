@@ -59,13 +59,29 @@ Micro- and nanoplastics (MPs/NPs) enter the body via several primary routes of e
 
 ## Blood-Brain Barrier Structure
 
-The central nervous system has a sophisticated shield called the Blood-Brain Barrier (BBB) that separates brain matter from the rest of the body. This structure is formed by specialized cerebral endothelial cells connected by tight junctions, along with pericytes and astrocytes [@mcconnellCellsBloodbrainBarrier2022]. The BBB effectively limits the passage of foreign substances, pathogens, and large molecules from the circulatory system past the outer brain layer, which helps maintain the neural microenvironment's homeostasis.
+The central nervous system (CNS) has a sophisticated shield called the Blood-Brain Barrier (BBB) that separates brain matter from the rest of the body. This structure is formed by specialized cerebral endothelial cells connected by tight junctions, along with pericytes and astrocytes [@mcconnellCellsBloodbrainBarrier2022]. The BBB effectively limits the passage of foreign substances, pathogens, and large molecules from the circulatory system past the outer brain layer, which helps maintain the neural microenvironment's homeostasis.
 
 ## Translocation Hypotheses
 
-As suc
+There are many hypotheses regarding the MNPs' route through the BBB. One such route is paracellular diffusion, which in theory could allow even smallest nanoplastic particles to pass, although this pathway is heavily restricted [@campbellObjectiveAssessmentNanoparticle2012; @winiarskaPotentialImpactNano2024]. A more probable mechanism is endocytosis—where NPs are internalized by the brain endothelial cells and subsequently exocytosed into the brain interstitial fluid [@hamedNeurotoxicEffectsDifferent2022]. A third, highly discussed hypothesis is the "Trojan Horse effect". This scenario presumes that MNPs are first phagocytized by circulating immune cells, which then act as vectors to carry them across the BBB [@liNewEvidenceMechanisms2025].
+
+## Associated Toxicants
+
+A critical factor that exacerbates MNP-related neurotoxicity is associated toxicants. MNPs, due to their high surface-to-volume ratio, readily absorb chemical additives and environmental pollutants, (e.g., benzo[a]pyrene, okadaic acid) [@yanPolystyreneNanoplasticsPromote2023]. These chemicals also have the capability to disrupt the BBB and impair tight junction integrity, thereby allowing the plastic particles easier access to the brain tissue and synergizing the overall neurotoxic effect. [@chengEffectsAdsorbedBenzoapyrene2023]
 
 # Microglial Activation and Neuroinflammation
+
+## The Role of Microglia
+
+Microglial cells are the brain's resident macrophages and the primary immune cells of the CNS. In their resting state, microglia adopt a branched morphology, actively surveying the microenvironment for pathogens, damaged cells, or misfolded proteins [@wakeFunctionsMicrogliaCentral2011]. When activated, these cells will rapidly undergo functional and morphological transformation, proliferate, migrate to the injury site, and engage in immunological activies—i.e., phagocytosis, antigen presentation, and the release of signaling molecules [@yangRoleMicrogliaCentral2010]. The neuroinflammation is marked by thechronic, uncontrolled activation of cells like microglia, which leads to persistent neurotoxicity and neuronal damage [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].'
+
+![Different Activation States of Microglia](images/microglia_states.jpg){#fig-entry-routes width="6.5in" fig-alt="Environmental Sources and MNPs' Pathways to the Brain" apa-note="Microglia experience morphologic and phenotypic/functional changes upon activation. Shown in this drawing are Disease-Associated Microglia (DAMs), Injury-Responsive Microglia (IRMs), and aged microglia, each representing a distinct activation state. Reprinted from Muzio, L., Viotti, A., & Martino, G. (2021). Microglia in Neuroinflammation and Neurodegeneration: From Understanding to Therapy. Frontiers in Neuroscience, 15, 742065. https://doi.org/10.3389/fnins.2021.742065."}
+
+## Direct Activation Mechanism
+
+One primary hypothesized mechanism involves the direct interaction of ultra-fine plastic particles (nanoplastics) with microglia. As discussed in the previous section, NPs are believed capable of crossing the BBB and being taken up via phagocytosis by nearby microglial cells. Being non-degradable, these particles persist within the microglial lysosome, which leads to a phenomenon coined "frustrated phagocytosis" [@ishidaLivecellImagingMacrophage2019]. The inability to clear the foreign material results in chronic lysosomal stress and damage—akin to choking themselves to death [@mularskiObservingFrustratedPhagocytosis2018]. Persistent internal stress like this drives a sustained microglial activation state that remains even in the absence of a live pathogen.
+
+## Inflammasome Pathway
 
 # Consequences and Future Directions
 
