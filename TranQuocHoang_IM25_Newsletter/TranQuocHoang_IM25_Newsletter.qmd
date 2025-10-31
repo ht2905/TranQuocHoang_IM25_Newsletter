@@ -27,15 +27,15 @@ professor: Assoc. Prof. Hoai T. T. Nguyen
 duedate: 31/10/2025
 note: |
   Student ID: BTBTWE24036
-abstract: "The ubiquitous presence of micro- and nanoplastics (MNPs) constitutes a growing global environmental and health crisis. This paper explores the alarming neurotoxic potential of MNPs by dissecting their mechanisms of action within the central nervous system (CNS). Nanoplastics, due to their diminutive size, facilitate entry into the body via ingestion and inhalation, and are capable of traversing the Blood-Brain Barrier (BBB) through pathways like endocytosis and the 'Trojan Horse effect.' Once within the brain, non-degradable MNPs trigger a sustained state of neuroinflammation via persistent microglial activation. This process is amplified by frustrated phagocytosis and and subsequent activation of the NLRP3 Inflammasome, leading to the release of potent pro-inflammatory cytokines. Furthermore, MNP exposure in peripheral sites, mediated by the Gut-Brain Axis (GBA), drives systemic inflammation—which in turn leads to functional consequences like HPA axis dysregulation, anxiety-like behaviors, and cognitive deficits. The evidence establishes MNPs as significant neurotoxic agents, necessitating urgent, globally coordinated prevention and the development of targeted therapeutics, such as BBB-permeable NLRP3 inhibitors."
+abstract: "The ubiquitous presence of micro- and nanoplastics (MNPs) constitutes a growing global environmental and health crisis. This paper explores the alarming neurotoxic potential of MNPs by dissecting their mechanisms of action within the central nervous system (CNS). Nanoplastics, due to their diminutive size, facilitate entry into the body via ingestion and inhalation, and can traverse the Blood-Brain Barrier (BBB) through pathways like endocytosis and the ‘Trojan Horse effect.’ Once within the brain, non-degradable MNPs trigger a sustained state of neuroinflammation via persistent microglial activation. This process is amplified by frustrated phagocytosis and subsequent activation of the NLRP3 Inflammasome, leading to the release of potent pro-inflammatory cytokines. Furthermore, MNP exposure in peripheral sites, mediated by the Gut-Brain Axis (GBA), drives systemic inflammation—which in turn leads to functional consequences like HPA axis dysregulation, anxiety-like behaviors, and cognitive deficits. The evidence establishes MNPs as significant neurotoxic agents, necessitating urgent, globally coordinated prevention and the development of targeted therapeutics, such as BBB-permeable NLRP3 inhibitors."
 keywords: [Microplastic, Microparticles, Nanoplastic, Nanoparticles, Neuroinflammation, Microglia, Environmental Pollution]
 author-note:
-  correspondence-note: "The abstract was drafted with the assistance of an AI language model and subsequently reviewed, fact-checked, and revised by the author. All other sections of the paper were written independently by the author.
+  disclosures:
+    conflict of interest: The author has no conflict of interest to declare.
+    gratitude: "The abstract was drafted with the assistance of an AI language model and subsequently reviewed, fact-checked, and revised by the author. All other sections of the paper were written independently by the author.
   
 
 The Quarto source code for this paper is available at https://github.com/ht2905/TranQuocHoang_IM25_Newsletter."
-  disclosures:
-    conflict of interest: The author has no conflict of interest to declare.
 floatsintext: true
 ---
 
