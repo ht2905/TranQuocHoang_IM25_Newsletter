@@ -1,0 +1,39 @@
+#identifiable info
+lab_photo.png
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+
+# Quarto and Knitr generated files
+.quarto/
+*_files/
+*_cache/
+cache/
+
+# Quarto output directories
+
+# Rendered documents (will not ignore, but for this repo only)
+# *.html
+# *.pdf
+# *.docx
+# *.tex
+
+# Intermediate files
+*.utf8.md
+*.knit.md
+
+# Package build artifacts
+*.tar.gz
+*.Rcheck/
+
+# Data and credentials
+# data/
+
+# If using secrets file
+# .env
+# *.secrets
+# *.key
