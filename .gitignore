@@ -29,6 +29,7 @@
 *_files/               # Knitr/R Markdown file dependencies (e.g., figure folders)
 *_cache/               # Knitr cache folder
 cache/                 # General cache folder (if you use this naming)
+_freeze				   # Build artifact, mainly used in incremental rendering
 
 # Quarto extensions
 _extensions/
