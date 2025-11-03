@@ -30,6 +30,9 @@
 *_cache/               # Knitr cache folder
 cache/                 # General cache folder (if you use this naming)
 
+# Quarto extensions
+_extensions/
+
 # Intermediate Quarto/R Markdown files
 *.utf8.md
 *.knit.md
