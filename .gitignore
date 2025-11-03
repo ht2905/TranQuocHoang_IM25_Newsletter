@@ -3,16 +3,16 @@
 # ----------------------------------------------------------------------------
 
 # RStudio Project and Session Files
-.Rproj.user/           # User-specific data and temporary files
-.RData                 # R image file
-.RDataTmp              # Temporary R image file
-.Ruserdata             # R user data
-*.Rproj                # RStudio project file
+.Rproj.user/ # User-specific data and temporary files
+.RData # R image file
+.RDataTmp # Temporary R image file
+.Ruserdata # R user data
+*.Rproj # RStudio project file
 
 # R console/history files (Consolen-/Verlaufsdateien)
 .Rhistory
-# .Rprofile              # User profile/startup file (often tracked, so commented/disabled in this case)
-/renv/                 # Ignore the renv folder itself, but include exceptions below
+# .Rprofile # User profile/startup file (often tracked, so commented/disabled in this case)
+/renv/ # Ignore the renv folder itself, but include exceptions below
 
 # renv exceptions: keep these tracked for environment reproducibility
 !/renv/activate.R
@@ -25,11 +25,11 @@
 # ----------------------------------------------------------------------------
 
 # Quarto and Knitr intermediate and cache files (Zwischen- und Cache-Dateien)
-.quarto/               # Quarto cache folder
-*_files/               # Knitr/R Markdown file dependencies (e.g., figure folders)
-*_cache/               # Knitr cache folder
-cache/                 # General cache folder (if you use this naming)
-_freeze				   # Build artifact, mainly used in incremental rendering
+.quarto/ # Quarto cache folder
+*_files/ # Knitr/R Markdown file dependencies (e.g., figure folders)
+*_cache/ # Knitr cache folder
+cache/ # General cache folder (if you use this naming)
+_freeze # Build artifact, mainly used in incremental rendering
 
 # Quarto extensions
 _extensions/
@@ -38,9 +38,21 @@ _extensions/
 *.utf8.md
 *.knit.md
 
+# LaTeX/PDF compilation temporary files
+**/*.fff** # **Temporary LaTeX figure/float file (the one you asked about)**
+**/*.aux** # LaTeX auxiliary file
+**/*.bbl** # BibTeX generated bibliography file
+**/*.blg** # BibTeX log file
+**/*.log** # LaTeX log file
+**/*.nav** # LaTeX navigation file
+**/*.out** # LaTeX output file
+**/*.snm** # LaTeX file for Beamer (presentations)
+**/*.toc** # LaTeX table of contents file
+**/*.synctex.gz** # SyncTeX file for editor synchronization
+
 # Package build and testing artifacts
-*.tar.gz               # R package tarball
-*.Rcheck/              # R package check directory
+*.tar.gz # R package tarball
+*.Rcheck/ # R package check directory
 
 # ----------------------------------------------------------------------------
 # Common System Files & Project-Specific Exclusions
@@ -50,9 +62,9 @@ _extensions/
 lab_photo.png
 
 # Windows/macOS/Linux system files (Systemdateien)
-Thumbs.db              # Windows thumbnail cache
-.DS_Store              # macOS directory service file
-*.log                  # General log files
+Thumbs.db # Windows thumbnail cache
+.DS_Store # macOS directory service file
+*.log # General log files (already included some specific ones above, but this is a general catch-all)
 
 # Data and credentials (Uncomment if needed)
 # data/
@@ -61,7 +73,7 @@ Thumbs.db              # Windows thumbnail cache
 # *.key
 
 # Rendered documents (Uncomment if you decide to ignore outputs)
-# *.html
-# *.pdf
+*.html
+*.pdf
 # *.docx
-# *.tex
+*.tex
