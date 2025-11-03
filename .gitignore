@@ -1,39 +1,63 @@
-#identifiable info
+# ----------------------------------------------------------------------------
+# RStudio & R Environment
+# ----------------------------------------------------------------------------
+
+# RStudio Project and Session Files
+.Rproj.user/           # User-specific data and temporary files
+.RData                 # R image file
+.RDataTmp              # Temporary R image file
+.Ruserdata             # R user data
+*.Rproj                # RStudio project file
+
+# R console/history files (Consolen-/Verlaufsdateien)
+.Rhistory
+# .Rprofile              # User profile/startup file (often tracked, so commented/disabled in this case)
+/renv/                 # Ignore the renv folder itself, but include exceptions below
+
+# renv exceptions: keep these tracked for environment reproducibility
+!/renv/activate.R
+!/renv/settings.json
+!renv.lock
+# You should also keep the renv/.gitignore file unless you delete renv/
+
+# ----------------------------------------------------------------------------
+# Quarto / Knitr Build Artifacts & Outputs
+# ----------------------------------------------------------------------------
+
+# Quarto and Knitr intermediate and cache files (Zwischen- und Cache-Dateien)
+.quarto/               # Quarto cache folder
+*_files/               # Knitr/R Markdown file dependencies (e.g., figure folders)
+*_cache/               # Knitr cache folder
+cache/                 # General cache folder (if you use this naming)
+
+# Intermediate Quarto/R Markdown files
+*.utf8.md
+*.knit.md
+
+# Package build and testing artifacts
+*.tar.gz               # R package tarball
+*.Rcheck/              # R package check directory
+
+# ----------------------------------------------------------------------------
+# Common System Files & Project-Specific Exclusions
+# ----------------------------------------------------------------------------
+
+# Identifiable Info (User-Defined)
 lab_photo.png
 
-# RStudio
-.Rproj.user/
-.Rhistory
-.RData
-.RDataTmp
-.Ruserdata
+# Windows/macOS/Linux system files (Systemdateien)
+Thumbs.db              # Windows thumbnail cache
+.DS_Store              # macOS directory service file
+*.log                  # General log files
 
-# Quarto and Knitr generated files
-.quarto/
-*_files/
-*_cache/
-cache/
+# Data and credentials (Uncomment if needed)
+# data/
+# .env
+# *.secrets
+# *.key
 
-# Quarto output directories
-
-# Rendered documents (will not ignore, but for this repo only)
+# Rendered documents (Uncomment if you decide to ignore outputs)
 # *.html
 # *.pdf
 # *.docx
 # *.tex
-
-# Intermediate files
-*.utf8.md
-*.knit.md
-
-# Package build artifacts
-*.tar.gz
-*.Rcheck/
-
-# Data and credentials
-# data/
-
-# If using secrets file
-# .env
-# *.secrets
-# *.key
