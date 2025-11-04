@@ -47,7 +47,7 @@ comment template, so I don't forget how to do it lol
 
 # Introduction
 
-The ubiquitous presence of microplastics (MPs) and nanoplastics (NPs) is a defining global environmental crisis of the 21st century. First named by [@thompsonLostSeaWhere2004], microplastics are defined as particles with diameters from $\textrm{1}\ \mu \text{m}$ to $\textrm{5}\ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1}\ \mu \text{m}$. Given their non-degradable nature and ability to carry adsorbed toxicants, MNPs represent a significant form of environmental pollution whose full impact is only beginning to be understood.
+The ubiquitous presence of microplastics (MPs) and nanoplastics (NPs) is a defining global environmental crisis of the 21st century. First named by [@thompsonLostSeaWhere2004], microplastics are defined as particles with diameters from $\textrm{1} \mathrm{\mu} \text{m}$ to $\textrm{5}\ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1} \mathrm{\mu} \text{m}$. Given their non-degradable nature and ability to carry adsorbed toxicants, MNPs represent a significant form of environmental pollution whose full impact is only beginning to be understood.
 
 The mechanism driving this systemic harm is centered around the Gut-Brain-Axis (GBA). This axis represents the bidirectional communication pathway linking the nervous system and the immune system, thereby coordinating the body's response to both internal and external stressors. It is also through this pathway that environmental insults can translate into central nervous system (CNS) dysfunction. This paper argues that MNPs exposure poses an alarming neurological risk by facilitating the particles' access to the brain, either directly or indirectly. Once in the CNS, these particles can trigger a sustained, non-resolving state of neuroinflammation via persistent microglial activation—ultimately resulting in cognitive and behavioral deficits.
 
@@ -117,20 +117,20 @@ Moving forward, a multi-disciplinary approach is crucial to translate these mech
 
 # Abbreviations
 
-| Abbreviation | Full Term |
-| :--- | :--- |
-| **BBB** | Blood-Brain Barrier |
-| **CNS** | Central Nervous System |
-| **GBA** | Gut-Brain-Axis |
-| **GR** | Glucocorticoid Receptor |
-| **HPA** | Hypothalamic-Pituitary-Adrenal |
-| **IL-1$\beta$** | Interleukin-1$\beta$ |
-| **IL-6** | Interleukin-6 |
-| **IL-18** | Interleukin-18 |
-| **MNPs** | Micro- and Nanoplastics |
-| **MPs** | Microplastics |
-| **NPs** | Nanoplastics |
-| **ROS** | Reactive Oxygen Species |
-| **TNF-$\alpha$** | Tumor Necrosis Factor-$\alpha$ |
+| Abbreviation     | Full Term                      |
+|:-----------------|:-------------------------------|
+| **BBB**          | Blood-Brain Barrier            |
+| **CNS**          | Central Nervous System         |
+| **GBA**          | Gut-Brain-Axis                 |
+| **GR**           | Glucocorticoid Receptor        |
+| **HPA**          | Hypothalamic-Pituitary-Adrenal |
+| **IL-1**$\beta$  | Interleukin-1$\beta$           |
+| **IL-6**         | Interleukin-6                  |
+| **IL-18**        | Interleukin-18                 |
+| **MNPs**         | Micro- and Nanoplastics        |
+| **MPs**          | Microplastics                  |
+| **NPs**          | Nanoplastics                   |
+| **ROS**          | Reactive Oxygen Species        |
+| **TNF-**$\alpha$ | Tumor Necrosis Factor-$\alpha$ |
 
 # References
