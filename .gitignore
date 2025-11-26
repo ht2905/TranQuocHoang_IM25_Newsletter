@@ -77,3 +77,6 @@ Thumbs.db # Windows thumbnail cache
 *.pdf
 # *.docx
 *.tex
+
+# Specific document to ignore
+TranQuocHoang_IM25_Newsletter.docx
