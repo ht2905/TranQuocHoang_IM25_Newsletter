@@ -2,67 +2,70 @@
 
 This repository contains the Quarto source code and supporting files for an academic paper submitted for the **Immunology (BT335IU)** course.
 
------
+---
 
 ## 🎯 Project Overview
 
-This paper explores the neurotoxic potential of Micro- and Nanoplastics (MNPs), focusing on their ability to traverse the Blood-Brain Barrier (BBB) and induce chronic inflammation and HPA Axis dysregulation.
+This paper explores the neurotoxic potential of **Micro- and Nanoplastics (MNPs)**, focusing on their ability to traverse the Blood-Brain Barrier (BBB) and induce chronic neuroinflammation and HPA Axis dysregulation.
 
-  * **Topic:** Immune Response Under Environmental Stress.
-  * **Course:** Immunology (BT335IU)
-  * **Author:** Tran Quoc Hoang
-  * **Submission Deadline:** 31 October 2025
+* **Topic:** Immune Response Under Environmental Stress.
+* **Course:** Immunology (BT335IU)
+* **Author:** Tran Quoc Hoang
+* **Submission Deadline:** 31 October 2025
 
------
+---
 
 ## 💻 Technical Environment
 
-This project is built using **Quarto** and **R (RStudio)** for dynamic document generation. To ensure true reproducibility, the R environment is managed by **`renv`**.
+This project uses **Quarto** and **R (RStudio)** for dynamic document generation. The R package environment is managed by **`renv`** to ensure exact reproducibility.
 
 ### Source Files
+* **Main Document Source:** `TranQuocHoang_IM25_Newsletter.qmd`
+* **Bibliography:** `IM25_Newsletter.bib` (Managed via Zotero + Better BibTeX)
 
-  * **Main Document Source:** `TranQuocHoang_IM25_Newsletter.qmd`
-  * **Bibliography:** `IM25_Newsletter.bib` (Managed via Zotero + Better BibTeX)
+### Development Environment (For Reference)
+The project was developed in a Linux environment:
+* **Host OS:** Windows 11
+* **Virtualization:** WSL2
+* **Linux Distribution:** Ubuntu 22.04 LTS (Noble)
 
-### Operating System (For Reference)
+---
 
-The environment used for initial development was:
+## 🚀 Setup & Rendering Instructions (A Single, Coherent Guide)
 
-  * **Host OS:** Windows 11
-  * **Virtualization:** WSL2
-  * **Linux Distribution:** Ubuntu 22.04 LTS
+To compile this document and reproduce the final output (`.docx` and potentially `.pdf`), you must install **external system libraries**, **R packages**, and **Quarto extensions** in sequence.
 
------
+### Step 1: Install Critical Linux System Dependencies (WSL/Ubuntu)
 
-## 🚀 Setup & Rendering Instructions (3-Step Guide)
+The R packages `ragg` and `systemfonts` require specific **development headers** (build dependencies) to compile successfully in a Linux environment. These **must** be installed via your terminal **before** installing R packages.
 
-To compile this document and reproduce the final output, please follow these steps sequentially.
-
-### 1\. R Environment and Package Setup
-
-The R version and all package dependencies are managed by the **`renv.lock`** file.
-
-| Action | Command (in **R Console**) | Description |
+| Dependency | Command (in **WSL Terminal**) | Purpose |
 | :--- | :--- | :--- |
-| **A. Activate Environment** | **Open the `.Rproj` file** in RStudio. | This automatically activates the `renv` environment. |
-| **B. Install Packages** | `renv::restore()` | Reads `renv.lock` and installs the **exact package versions** required, including `yaml`. |
+| **R Dev Tools** | `sudo apt install r-base-dev` | Required for compiling many R packages from source. |
+| **Graphics Libs** | `sudo apt install libfontconfig1-dev libfreetype6-dev libwebp-dev` | Essential for `ragg` and `systemfonts` to handle fonts and image formats (WebP). |
 
-### 2\. Quarto Extensions and System Dependencies
+### Step 2: R Environment and Package Setup
 
-These required external tools are **not** managed by `renv` and must be installed via the Terminal.
+The R version and all project dependencies are managed by the **`renv.lock`** file.
+
+1.  **Activate Environment:** **Open the `.Rproj` file** in RStudio to automatically activate the `renv` environment.
+2.  **Install Packages:** Run the following command in the **R Console** to install the exact required versions:
+    ```r
+    renv::restore()
+    ```
+
+### Step 3: Quarto Extensions and LaTeX
+
+These external tools are required for formatting and PDF compilation.
 
 | Dependency | Command (in **Terminal** Pane) | Description |
 | :--- | :--- | :--- |
-| **APA Quarto Format** | `quarto add wjschne/apaquarto` | Installs the necessary extension for APA citation formatting. |
-| **TinyTeX** | `quarto install tinytex` | Essential for compiling PDF output via LaTeX. |
-| **R Development Tools** | `sudo apt install r-base-dev` | Required on Linux systems (like WSL) to successfully compile some R packages from source. |
+| **APA Quarto Format** | `quarto add wjschne/apaquarto` | Installs the extension for APA citation and document formatting. |
+| **TinyTeX** | `quarto install tinytex` | Essential for compiling PDF output via LaTeX (if enabled in the `.qmd` file). |
 
-### 3\. Render the Document
+### Step 4: Render the Document
 
-Once all dependencies are set up, run the render command from the R Console:
+Once all dependencies are set up, run the render command from the **R Console**:
 
 ```r
 quarto::quarto_render("TranQuocHoang_IM25_Newsletter.qmd")
-```
-
-Alternatively, simply click the **Render** button in RStudio while the `.qmd` file is open.
