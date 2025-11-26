@@ -45,7 +45,18 @@ comment template, so I don't forget how to do it lol
 -->
 ```
 
-# Introduction
+```{r renv-dependencies, include=FALSE}
+# This chunk makes the core R rendering packages visible to renv::snapshot()
+# The 'knitr' and 'rmarkdown' packages pull in most of the other dependencies.
+library(knitr)
+library(rmarkdown)
+library(tinytex) 
+library(quarto) 
+library(yaml)
+```
+
+# Introductionn
+
 
 The ubiquitous presence of microplastics (MPs) and nanoplastics (NPs) is a defining global environmental crisis of the 21st century. First named by [@thompsonLostSeaWhere2004], microplastics are defined as particles with diameters from $\textrm{1} \mathrm{\mu} \text{m}$ to $\textrm{5}\ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1} \mathrm{\mu} \text{m}$. Given their non-degradable nature and ability to carry adsorbed toxicants, MNPs represent a significant form of environmental pollution whose full impact is only beginning to be understood.
 
