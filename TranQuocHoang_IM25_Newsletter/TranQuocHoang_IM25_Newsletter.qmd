@@ -12,7 +12,7 @@ bibliography: IM25_Newsletter.bib
 
 author:
   - name: Tran Quoc Hoang
-    email: BTBTWE24036@student.hcmiu.edu.vn
+    email: tranquochoang@protonmail.com
     corresponding: true
     affiliations:
       - name: International University - Vietnam National University HCM City
