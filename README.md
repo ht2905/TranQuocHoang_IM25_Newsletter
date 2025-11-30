@@ -1,6 +1,6 @@
 # 🧠 Micro- and Nanoplastics: Crossing the Blood-Brain Barrier to Drive Sustained Neuroinflammation and HPA Axis Dysregulation
 
-This repository contains the Quarto source code and supporting files for an academic paper submitted for the **Immunology (BT335IU)** course.
+This repository contains the **Quarto** source code and supporting files for an academic paper submitted for the **Immunology (BT335IU)** course.
 
 ---
 
@@ -17,7 +17,7 @@ This paper explores the neurotoxic potential of **Micro- and Nanoplastics (MNPs)
 
 ## 💻 Technical Environment
 
-This project uses **Quarto** and **R (RStudio)** for dynamic document generation. The R package environment is managed by **`renv`** to ensure exact reproducibility.
+This project uses **Quarto (CLI)** and **R (RStudio)** for dynamic document generation. The R package environment is managed by **`renv`** to ensure exact reproducibility.
 
 ### Source Files
 * **Main Document Source:** `TranQuocHoang_IM25_Newsletter.qmd`
@@ -48,24 +48,24 @@ The R packages `ragg` and `systemfonts` require specific **development headers**
 
 The R version and all project dependencies are managed by the **`renv.lock`** file.
 
-1.  **Activate Environment:** **Open the `.Rproj` file** in RStudio to automatically activate the `renv` environment.
-2.  **Install Packages:** Run the following command in the **R Console** to install the exact required versions:
-    ```r
-    renv::restore()
-    ```
+1.  **Activate Environment:** **Open the `.Rproj` file** in RStudio to automatically activate the `renv` environment.
+2.  **Install Packages:** Run the following command in the **R Console** to install the exact required versions:
+```r
+renv::restore()
+```
 
 ### Step 3: Quarto Extensions and LaTeX
 
 These external tools are required for formatting and PDF compilation.
 
-| Dependency | Command (in **Terminal** Pane) | Description |
+| Dependency | Command (in **Terminal**) | Description |
 | :--- | :--- | :--- |
-| **APA Quarto Format** | `quarto add wjschne/apaquarto` | Installs the extension for APA citation and document formatting. |
+| **APA Quarto Format** | `quarto install extension wjschne/apaquarto` | Installs the extension for APA citation and document formatting. |
 | **TinyTeX** | `quarto install tinytex` | Essential for compiling PDF output via LaTeX (if enabled in the `.qmd` file). |
 
 ### Step 4: Render the Document
 
-Once all dependencies are set up, run the render command from the **R Console**:
+Once all dependencies are set up, run the render command from the **Terminal** or the **Terminal** pane in RStudio.
 
-```r
-quarto::quarto_render("TranQuocHoang_IM25_Newsletter.qmd")
+```bash
+quarto render TranQuocHoang_IM25_Newsletter.qmd
