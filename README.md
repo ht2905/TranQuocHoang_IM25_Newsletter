@@ -48,8 +48,8 @@ The R packages `ragg` and `systemfonts` require specific **development headers**
 
 The R version and all project dependencies are managed by the **`renv.lock`** file.
 
-1.  **Activate Environment:** **Open the `.Rproj` file** in RStudio to automatically activate the `renv` environment.
-2.  **Install Packages:** Run the following command in the **R Console** to install the exact required versions:
+1. **Activate Environment:** **Open the `.Rproj` file** in RStudio to automatically activate the `renv` environment.  
+2. **Install Packages:** Run the following command in the **R Console** to install the exact required versions:
 ```r
 renv::restore()
 ```
