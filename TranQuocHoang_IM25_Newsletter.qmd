@@ -2,13 +2,19 @@
 title: "Micro- and Nanoplastics: Crossing the Blood-Brain Barrier to Drive Sustained Neuroinflammation and HPA Axis Dysregulation"
 
 format:
-  apaquarto-docx: default
-#  apaquarto-pdf:
-#    documentmode: stu
+  hikmah-manuscript-docx:
+    toc: false
 
 date: last-modified
 date-format: MM-DD-YYYY
-bibliography: IM25_Newsletter.bib
+bibliography: bibliography.bib
+# csl: vancouver.csl
+# csl: elsevier-vancouver-short-author-list.csl
+csl: elsevier-vancouver.csl
+
+crossref:
+  fig-title: "Fig." # Controls the prefix used in the caption (“Fig. 1. Caption…”)
+  fig-prefix: "Fig." # Controls the prefix used by cross-references (“see Fig. 1”)
 
 author:
   - name: Tran Quoc Hoang
@@ -24,19 +30,11 @@ author:
         country: Vietnam
 course: Immunology (BT335IU)
 professor: Assoc. Prof. Hoai T. T. Nguyen
-duedate: 31/10/2025
+duedate: 12/22/2025
 note: |
   Student ID: BTBTWE24036
 abstract: "The ubiquitous presence of micro- and nanoplastics (MNPs) constitutes a growing global environmental and health crisis. This paper explores the alarming neurotoxic potential of MNPs by dissecting their mechanisms of action within the central nervous system (CNS). Nanoplastics, due to their diminutive size, facilitate entry into the body via ingestion and inhalation, and can traverse the Blood-Brain Barrier (BBB) through pathways like endocytosis and the ‘Trojan Horse effect.’ Once within the brain, non-degradable MNPs trigger a sustained state of neuroinflammation via persistent microglial activation. This process is amplified by frustrated phagocytosis and subsequent activation of the NLRP3 Inflammasome, leading to the release of potent pro-inflammatory cytokines. Furthermore, MNP exposure in peripheral sites, mediated by the Gut-Brain Axis (GBA), drives systemic inflammation—which in turn leads to functional consequences like HPA axis dysregulation, anxiety-like behaviors, and cognitive deficits. The evidence establishes MNPs as significant neurotoxic agents, necessitating urgent, globally coordinated prevention and the development of targeted therapeutics, such as BBB-permeable NLRP3 inhibitors."
 keywords: [Microplastic, Microparticles, Nanoplastic, Nanoparticles, Neuroinflammation, Microglia, Environmental Pollution]
-author-note:
-  disclosures:
-    conflict of interest: The author has no conflict of interest to declare.
-    gratitude: "The abstract was drafted with the assistance of an AI language model and subsequently reviewed, fact-checked, and revised by the author. All other sections of the paper were written independently by the author.
-  
-
-The Quarto source code for this paper is available at https://github.com/ht2905/TranQuocHoang_IM25_Newsletter."
-floatsintext: true
 ---
 
 ```{=html}
@@ -67,7 +65,7 @@ The mechanism driving this systemic harm is centered around the Gut-Brain-Axis (
 
 MNPs enter the body via several primary routes. The most prevalent pathways are ingestion—mainly from contaminated food and drinking water—and inhalation—often from airborne particles such as indoor dust and synthetic clothing fibers. While dermal absorption remains a possibility, it is generally considered a less significant route. @fig-entry-routes depicts the translocation pathway of MNP to the brain. Recent research discovered that nanoplastics appear to be the most dangerous type, as their diminutive size facilitates rapid entrance into the bloodstream and distribution throughout the body [@kopatzMicroNanoplasticsBreach2023].
 
-![Environmental Sources and MNPs' Pathways to the Brain](photos/entry-routes.jpeg){#fig-entry-routes width="6.5in" fig-alt="Environmental Sources and MNPs' Pathways to the Brain" apa-note="This diagram showcases the types of plastics, where they come from, and how they enter the body. The American Plastics Industry Association created the SPI code to provide a standard method for classifying plastics. Nanoplastics are best at traversing through the BBB into the brain due to their diminutive size. Reprinted from Ma, Q., Lei, J., Pang, Y., Shen, Y., & Zhang, T. (2025). Neurotoxicity of Micro- and Nanoplastics: A Comprehensive Review of Central Nervous System Impacts. Environment & Health. https://doi.org/10.1021/envhealth.5c00087."}
+![**Environmental Sources and MNPs' Pathways to the Brain.** This diagram showcases the types of plastics, where they come from, and how they enter the body. Nanoplastics are best at traversing through the BBB into the brain due to their diminutive size. The SPI code, created by the American Plastics Industry Association, provides a standard method for classifying plastics. Reprinted from Ma Q, Lei J, Pang Y, Shen Y, Zhang T [@maNeurotoxicityMicroNanoplastics2025].](photos/entry-routes.jpeg){#fig-entry-routes width=6.5in fig-align="center"}
 
 ## Blood-Brain Barrier Structure
 
@@ -87,7 +85,7 @@ A critical factor that exacerbates MNP-related neurotoxicity is associated toxic
 
 Microglial cells are the brain's resident macrophages and the primary immune cells of the CNS. In their resting state, microglia adopt a branched morphology, actively surveying the microenvironment for pathogens, damaged cells, or misfolded proteins [@wakeFunctionsMicrogliaCentral2011]. When activated, these cells will rapidly undergo functional and morphological transformation, proliferate, migrate to the injury site, and engage in immunological activies—i.e., phagocytosis, antigen presentation, and the release of signaling molecules [@yangRoleMicrogliaCentral2010]. @fig-microglia-states showcases different transformations of microglial cells. The neuroinflammation is marked by chronic, uncontrolled activation of cells like microglia, which leads to persistent neurotoxicity and neuronal damage [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].
 
-![Different Activation States of Microglia](photos/microglia_states.jpg){#fig-microglia-states width="6.5in" fig-alt="Different Activation States of Microglia" apa-note="Microglia experience morphologic and phenotypic/functional changes upon activation. Shown in this drawing are Disease-Associated Microglia (DAMs), Injury-Responsive Microglia (IRMs), and aged microglia, each representing a distinct activation state. Reprinted from Muzio, L., Viotti, A., & Martino, G. (2021). Microglia in Neuroinflammation and Neurodegeneration: From Understanding to Therapy. Frontiers in Neuroscience, 15, 742065. https://doi.org/10.3389/fnins.2021.742065."}
+![**Different Activation States of Microglia**. Microglia experience morphologic and phenotypic/functional changes upon activation. Shown in this drawing are Disease-Associated Microglia (DAMs), Injury-Responsive Microglia (IRMs), and aged microglia, each representing a distinct activation state. Reprinted from Muzio L, Viotti A, Martino G [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].](photos/microglia_states.jpg){#fig-microglia-states width=6.5in fig-align="center"}
 
 ## Direct Activation Mechanism
 
@@ -101,7 +99,7 @@ As a direct consequence of frustrated phagocytosis, an important inflammatory ca
 
 Microglial activation does not require direct entry of plastic particles into the brain. Exposure in peripheral sites, particularly the gut (via ingestion) and the lungs (via inhalation), can be sufficient to drive a state of systemic inflammation. As MNPs invade and damage the intestinal and pulmonary barriers, gut bacteria and associated toxins will translocate into the bloodstream. This systemic inflammatory state results in the establishment of the GBA [@kalyanRoleEndogenousLipopolysaccharides2022]. As such, inflammatory signals (such as pro-inflammatory cytokines), even without crossing the BBB themselves, can signal through endothelial cells and other immune cells, or directly diffuse across the BBB, practically acting as "danger messages" that trigger an indirect, secondary activation of the quiescent microglial population and extend the peripheral damage into the CNS [@boraMicroplasticsHumanHealth2024; @hooglandSystemicInflammationMicroglial2015]. @fig-gut-brain-axis demonstrates this complicated cascade, alongside the GBA.
 
-![Interactions Between MNPs and Human Gut](photos/gut-brain-axis.jpg){#fig-gut-brain-axis width="6.5in" fig-alt="The complex interactions between micro- and nanoplastics (MNPs)" apa-note="Figure (A) shows the entry of MNPs into the body. Figure (B) is the inflammatory response caused by the invasion of MNPs—marked by the release of pro-inflammatory cytokines such as TNF-$\\alpha$ and IL-6. Figure (C) outlines the pathways of oxidative stress activated by MNP-induced inflammation. Reprinted from Bora, S. S., Gogoi, R., Sharma, M. R., Anshu, Borah, M. P., Deka, P., Bora, J., Naorem, R. S., Das, J., & Teli, A. B. (2024). Microplastics and human health: Unveiling the gut microbiome disruption and chronic disease risks. Frontiers in Cellular and Infection Microbiology, 14, 1492759. https://doi.org/10.3389/fcimb.2024.1492759."}
+![**Interactions Between MNPs and Human Gut**. Figure (A) shows the entry of MNPs into the body. Figure (B) is the inflammatory response caused by the invasion of MNPs—marked by the release of pro-inflammatory cytokines such as TNF-$\alpha$ and IL-6. Figure (C) outlines the pathways of oxidative stress activated by MNP-induced inflammation. Reprinted from Bora S, Gogoi R, Sharma MR, Anshu, Borah MP, Deka P [@boraMicroplasticsHumanHealth2024].](photos/gut-brain-axis.jpg){#fig-gut-brain-axis width=6.5in fig-align="center"}
 
 # Consequences and Future Directions
 
@@ -113,7 +111,8 @@ Chronic microglial activation, sustained by MNP presence or systemic inflammator
 
 Another significant systemic consequence of chronic inflammation is the disruption of the hypothalamic-pituitary-adrenal (HPA) axis, often termed the Stress Axis. Pro-inflammatory cytokines released during MNP exposure, such as TNF-$\alpha$ and IL-6, are known stimulators of the HPA axis—which lead to increased production and release of glucocorticoids, namely, cortisol [@jeonNeuroinflammationCytokineAbnormality2016]. While an initial cortial surge is protective, exposure to inflammation signals over a long time period results in HPA dysregulation—which manifests as either hyper-activation or, paradoxically, a state of hyporesponsiveness.This impaired feedback mechanism compromises the body’s ability to manage stress and inflammation effectively, becoming a debilitating cycle where chronic inflammation leads to HPA axis exhaustion, which in turn further impairs the immune system’s ability to self-regulate [@bertolloHypothalamuspituitaryadrenalGutbrainAxes2025]; [@nunezChronicStressAutoimmunity2025]. This cycle can be seen in @fig-acute-chronic-HPA.
 
-![MNP-driven HPA Axis Dysregulation Cycle](photos/acute-chronic-HPA.png){#fig-acute-chronic-HPA width="6.5in" fig-alt="Acute vs. chronic stress: cytokine balance to imbalance via HPA axis dysregulation. Chronic stress is driven by long-term exposure to micro- and nanoplastics (MPs/NPs)" apa-note="The shift from a protective acute stress response (Left) to chronic endocrine and immune dysregulation (Right), a process exacerbated by sustained inflammatory signals from MNP exposure. During acute stress, the HPA axis releases Cortisol which maintains immune homeostasis by restraining pro-inflammatory cytokines (IL-1$\\beta$, IL-6, TNF-$\\alpha$, IL-17) However, chronic MNP-induced inflammation leads to persistent HPA activation, resulting in Glucocorticoid Receptor resistance. This impaired feedback loop prevents effective immune suppression, thereby sustaining high levels of pro-inflammatory cytokines, driving chronic inflammation—and potentially autoimmunity. Reprinted from Nunez, S. G., Rabelo, S. P., Subotic, N., Caruso, J. W., & Knezevic, N. N. (2025). Chronic Stress and Autoimmunity: The Role of HPA Axis and Cortisol Dysregulation. International Journal of Molecular Sciences, 26(20), 9994. https://doi.org/10.3390/ijms26209994."}
+![**MNP-driven HPA Axis Dysregulation Cycle**. The shift from a protective acute stress response (Left) to chronic endocrine and immune dysregulation (Right), a process exacerbated by sustained inflammatory signals from MNP exposure. During acute stress, the HPA axis releases Cortisol which maintains immune homeostasis by restraining pro-inflammatory cytokines (IL-1$\beta$, IL-6, TNF-$\alpha$, IL-17) However, chronic MNP-induced inflammation leads to persistent HPA activation, resulting in Glucocorticoid Receptor resistance. This impaired feedback loop prevents effective immune suppression, thereby sustaining high levels of pro-inflammatory cytokines, driving chronic inflammation—and potentially autoimmunity. Reprinted from Nunez SG, Rabelo SP, Subotic N, Caruso JW, Knezevic NN [@nunezChronicStressAutoimmunity2025].](photos/acute-chronic-HPA.png){#fig-acute-chronic-HPA width=6.5in fig-align="center"}
+
 
 ## Treatment and Prevention Angle
 
@@ -140,5 +139,15 @@ Moving forward, a multi-disciplinary approach is crucial to translate these mech
 | **MPs**          | Microplastics                  |
 | **NPs**          | Nanoplastics                   |
 | **TNF-**$\alpha$ | Tumor Necrosis Factor-$\alpha$ |
+
+: {tbl-colwidths="[30, 70]"}
+
+# Declaration of Competing Interest
+
+The author declare no competing interests.
+
+# Data/Code Availability
+
+The Quarto project underlying this paper—including the manuscript, figures, and bibliography—is available at https://github.com/ht2905/TranQuocHoang_IM25_Newsletter.
 
 # References
