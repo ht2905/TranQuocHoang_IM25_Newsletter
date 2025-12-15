@@ -32,7 +32,7 @@ cache/ # General cache folder (if you use this naming)
 _freeze # Build artifact, mainly used in incremental rendering
 
 # Quarto extensions
-_extensions/
+!_extensions/ # because this project uses a slightly modified template
 
 # Intermediate Quarto/R Markdown files
 *.utf8.md

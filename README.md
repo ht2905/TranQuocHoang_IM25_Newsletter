@@ -1,6 +1,6 @@
 # 🧠 Micro- and Nanoplastics: Crossing the Blood-Brain Barrier to Drive Sustained Neuroinflammation and HPA Axis Dysregulation
 
-This repository contains the **Quarto** source code and supporting files for an academic paper submitted for the **Immunology (BT335IU)** course. The manuscript was prepared using the **Hikmah Academic Quarto** template for journal-ready formatting, references, and figures.
+This repository contains the **Quarto** source code and supporting files for an academic paper submitted for the **Immunology (BT335IU)** course. The manuscript is rendered using a **locally vendored and modified version of the Hikmah Academic Quarto template**, ensuring consistent formatting, citations, and figure handling across systems.
 
 > **Document Preview:** A rendered `.docx` version of the manuscript is included in this repository for quick viewing without rendering the source files.
 
@@ -36,10 +36,11 @@ This project uses **Quarto (CLI)** and **R (RStudio)** to dynamically generate t
 * **Bibliography:** `bibliography.bib`
 * **Figures / Images:** `photos/`
 * **Project Lockfile:** `renv.lock`
+* **Quarto Extensions:** `_extensions/` (includes a modified Hikmah Academic template)
 
-### Manuscript metadata (from YAML)
+### Manuscript Metadata (from YAML)
 
-* **Output format:** `hikmah-manuscript-docx` (table of contents disabled) — renders to `.docx`
+* **Output format:** `hikmah-manuscript-docx` (table of contents disabled)
 * **Citation style:** `elsevier-vancouver.csl`
 * **Keywords:** Microplastic, Nanoplastic, Neuroinflammation, Microglia, Gut-Brain-Axis, HPA
 
@@ -47,40 +48,41 @@ This project uses **Quarto (CLI)** and **R (RStudio)** to dynamically generate t
 
 ## ⚠️ Disclaimer
 
-This README intentionally omits an explicit list of system-level packages and platform-specific build commands. Collaborators are expected to manage any required system dependencies appropriate to their environment. The project is reproducible at the R/Quarto level via `renv` and the steps below; however, rendering advanced outputs (e.g., PDF) can require additional system libraries or LaTeX, which are not documented here.
+This README intentionally omits an explicit list of system-level packages and platform-specific build commands. Collaborators are expected to manage any required system dependencies appropriate to their environment.
+
+The project is reproducible at the **R/Quarto level** via `renv` and the vendored Quarto extension included in this repository.
 
 ---
 
 ## 🛠 Minimal Setup & Rendering Instructions
 
-> Note: system-level dependencies (OS packages, LaTeX, etc.) are **not** listed here. Install them yourself as appropriate for your platform.
-
 ### 1️⃣ Restore R project environment
 
-Open R or RStudio in the project folder and run:
+Open R or RStudio in the project directory and run:
 
 ```r
 install.packages("renv")    # if not already installed
-renv::restore()             # installs packages locked in renv.lock
+renv::restore()             # installs exact versions from renv.lock
 ```
 
-This will install the exact R package versions used to create the manuscript (including `knitr`, `rmarkdown`, `tinytex` if present in the lockfile).
+This installs all R packages required to render the manuscript, including rendering and LaTeX support where applicable.
 
-### 2️⃣ Install Quarto & Hikmah template
+---
 
-1. Install **Quarto** if you don't have it: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/). Verify with:
+### 2️⃣ Install Quarto
+
+Install **Quarto** if not already available:
+[https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
+Verify installation:
 
 ```bash
 quarto check install
 ```
 
-2. Add the **Hikmah Academic Quarto** template to your project:
+> No additional Quarto extensions are required — the modified Hikmah template is already included in `_extensions/`.
 
-```bash
-quarto add andrewheiss/hikmah-academic-quarto
-```
-
-(If you previously used other Quarto extensions like `apaquarto`, you can keep or remove them as desired — this project uses the Hikmah docx format by default.)
+---
 
 ### 3️⃣ Render the manuscript (.docx)
 
@@ -90,19 +92,19 @@ From the project root:
 quarto render TranQuocHoang_IM25_Newsletter.qmd
 ```
 
-The output will be a `.docx` file as configured by the YAML (`hikmah-manuscript-docx`). The generated `.docx` file included in this repository serves as the quick preview.
+The output `.docx` file is generated using the local Hikmah-based format defined in the YAML. A rendered preview is already included in the repository.
 
 ---
 
 ## 📚 Key Sections (Manuscript)
 
 1. **Introduction:** MNP definitions, prevalence, and Gut–Brain Axis framing
-2. **MP Transport & BBB Crossing:** Routes of entry, BBB structure, translocation hypotheses (endocytosis, Trojan Horse), and associated toxicants
-3. **Microglial Activation & Neuroinflammation:** Frustrated phagocytosis, NLRP3 inflammasome cascade, and cytokine-mediated damage
+2. **MP Transport & BBB Crossing:** Routes of entry, BBB structure, translocation hypotheses, associated toxicants
+3. **Microglial Activation & Neuroinflammation:** Frustrated phagocytosis, NLRP3 inflammasome cascade
 4. **Gut–Brain Axis & Indirect Effects:** Peripheral inflammation driving central immune activation
-5. **Functional Consequences & HPA Disruption:** Behavioural, cognitive, and endocrine outcomes from chronic inflammation
-6. **Treatment & Prevention:** Policy, remediation, and therapeutic target (e.g., BBB-permeable NLRP3 inhibitors)
-7. **Conclusion & Future Directions:** Epidemiology, mechanistic gaps, and real-world exposure priorities
+5. **Functional Consequences & HPA Disruption:** Behavioural, cognitive, and endocrine outcomes
+6. **Treatment & Prevention:** Policy, remediation, and therapeutic targets
+7. **Conclusion & Future Directions:** Epidemiology, mechanistic gaps, real-world exposure priorities
 
 ---
 
@@ -114,6 +116,7 @@ The author declares no competing interests.
 
 ## 📂 Data & Code Availability
 
-The Quarto project underlying this paper — manuscript source, figures, and bibliography — is available in this repository. A rendered `.docx` preview is included for quick reference.
+The complete Quarto project — manuscript source, figures, bibliography, and modified template — is available in this repository. A rendered `.docx` preview is included for convenience.
 
-Repository: [https://github.com/ht2905/TranQuocHoang_IM25_Newsletter](https://github.com/ht2905/TranQuocHoang_IM25_Newsletter)
+Repository:
+[https://github.com/ht2905/TranQuocHoang_IM25_Newsletter](https://github.com/ht2905/TranQuocHoang_IM25_Newsletter)
