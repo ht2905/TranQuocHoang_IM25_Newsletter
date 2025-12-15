@@ -81,3 +81,5 @@ Thumbs.db # Windows thumbnail cache
 # Specific document to ignore
 TranQuocHoang_IM25_Newsletter.docx
 .Rproj.user
+
+/.quarto/

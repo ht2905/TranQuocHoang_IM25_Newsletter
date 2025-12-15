@@ -19,27 +19,36 @@ crossref:
 author:
   - name: Tran Quoc Hoang
     email: tranquochoang@protonmail.com
-    corresponding: true
-    affiliations:
-      - name: International University - Vietnam National University HCM City
+    affiliations: 
+      - id: international-uni
+        name: International University - VNU-HCM
         department: School of Biotechnology
         address: Quarter 33, Linh Xuan Ward
         city: Ho Chi Minh City
-        region: ~
+        state: ~
         postal-code: 71309
         country: Vietnam
+  
 course: Immunology (BT335IU)
 professor: Assoc. Prof. Hoai T. T. Nguyen
 duedate: 12/22/2025
 note: |
   Student ID: BTBTWE24036
-abstract: "The ubiquitous presence of micro- and nanoplastics (MNPs) constitutes a growing global environmental and health crisis. This paper explores the alarming neurotoxic potential of MNPs by dissecting their mechanisms of action within the central nervous system (CNS). Nanoplastics, due to their diminutive size, facilitate entry into the body via ingestion and inhalation, and can traverse the Blood-Brain Barrier (BBB) through pathways like endocytosis and the ‘Trojan Horse effect.’ Once within the brain, non-degradable MNPs trigger a sustained state of neuroinflammation via persistent microglial activation. This process is amplified by frustrated phagocytosis and subsequent activation of the NLRP3 Inflammasome, leading to the release of potent pro-inflammatory cytokines. Furthermore, MNP exposure in peripheral sites, mediated by the Gut-Brain Axis (GBA), drives systemic inflammation—which in turn leads to functional consequences like HPA axis dysregulation, anxiety-like behaviors, and cognitive deficits. The evidence establishes MNPs as significant neurotoxic agents, necessitating urgent, globally coordinated prevention and the development of targeted therapeutics, such as BBB-permeable NLRP3 inhibitors."
+abstract: |
+  The ubiquitous presence of micro- and nanoplastics (MNPs) constitutes a growing global environmental and health crisis. This paper explores the alarming neurotoxic potential of MNPs by dissecting their mechanisms of action within the central nervous system (CNS). Nanoplastics, due to their diminutive size, facilitate entry into the body via ingestion and inhalation, and can traverse the Blood-Brain Barrier (BBB) through pathways like endocytosis and the ‘Trojan Horse effect.’ Once within the brain, non-degradable MNPs trigger a sustained state of neuroinflammation via persistent microglial activation. This process is amplified by frustrated phagocytosis and subsequent activation of the NLRP3 Inflammasome, leading to the release of potent pro-inflammatory cytokines. Furthermore, MNP exposure in peripheral sites, mediated by the Gut-Brain Axis (GBA), drives systemic inflammation—which in turn leads to functional consequences like HPA axis dysregulation, anxiety-like behaviors, and cognitive deficits. The evidence establishes MNPs as significant neurotoxic agents, necessitating urgent, globally coordinated prevention and the development of targeted therapeutics, such as BBB-permeable NLRP3 inhibitors.
+
 keywords: [Microplastic, Microparticles, Nanoplastic, Nanoparticles, Neuroinflammation, Microglia, Environmental Pollution]
 ---
 
 ```{=html}
 <!--
-comment template, so I don't forget how to do it lol
+Add this to compiled .docx file: 
+
+Student ID: BTBTWE24036
+School of Biotechnology, International University - Vietnam National University HCM City
+Immunology (BT335IU)
+Assoc. Prof. Hoai T. T. Nguyen
+December 16, 2025
 -->
 ```
 
@@ -53,9 +62,13 @@ library(yaml)
 library(ragg)
 ```
 
+# Abstract in Vietnamese (as per Assignment Requirements)
+
+Sự hiện diện phổ biến của vi và hạt nhựa nano (MNPs) là một cuộc khủng hoảng môi trường và sức khỏe toàn cầu ngày càng gia tăng. Bài báo này khám phá tiềm năng độc thần kinh đáng báo động của MNPs bằng cách phân tích cơ chế hoạt động của chúng trong hệ thần kinh trung ương (CNS). Nhựa nano, nhờ kích thước nhỏ bé, dễ dàng xâm nhập vào cơ thể qua đường tiêu hóa và hô hấp, và có khả năng đi qua Hàng rào máu-não (BBB) thông qua các con đường như nhập bào (endocytosis) và hiệu ứng "Ngựa thành Troia" (Trojan Horse). Khi đã vào não, các hạt nhựa nano không phân hủy kích hoạt trạng thái viêm thần kinh kéo dài thông qua sự kích hoạt liên tục của tế bào thần kinh đệm nhỏ (microglia). Quá trình này được tăng cường bởi thực bào thất bại (frustrated phagocytosis) và sự kích hoạt phức hợp NLRP3 Inflammasome, giải phóng các cytokine gây viêm mạnh. Hơn nữa, sự phơi nhiễm MNPs ở các vị trí ngoại vi, thông qua Trục ruột-não (GBA), thúc đẩy tình trạng viêm toàn thân, dẫn đến các hậu quả chức năng như rối loạn trục HPA, các hành vi giống như lo âu và suy giảm nhận thức. Bằng chứng cho thấy MNPs là tác nhân độc thần kinh quan trọng, đòi hỏi phải có các biện pháp phòng ngừa khẩn cấp, phối hợp trên toàn cầu và phát triển các liệu pháp điều trị nhắm mục tiêu, chẳng hạn như chất ức chế NLRP3 có thể xuyên qua BBB.
+
 # Introduction
 
-The ubiquitous presence of microplastics (MPs) and nanoplastics (NPs) is a defining global environmental crisis of the 21st century. First named by @thompsonLostSeaWhere2004, microplastics are defined as particles with diameters from $\textrm{1}~ \mathrm{\mu} \text{m}$ to $\textrm{5}~ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1}~ \mathrm{\mu} \text{m}$. Given their non-degradable nature and ability to carry adsorbed toxicants, MNPs represent a significant form of environmental pollution whose full impact is only beginning to be understood.
+The ubiquitous presence of microplastics (MPs) and nanoplastics (NPs) is a defining global environmental crisis of the 21st century. First named by Thompson et al. @thompsonLostSeaWhere2004, microplastics are defined as particles with diameters from $\textrm{1}~ \mathrm{\mu} \text{m}$ to $\textrm{5}~ \text{mm}$, while nanoplastics have diameters smaller than $\textrm{1}~ \mathrm{\mu} \text{m}$. Given their non-degradable nature and ability to carry adsorbed toxicants, MNPs represent a significant form of environmental pollution whose full impact is only beginning to be understood.
 
 The mechanism driving this systemic harm is centered around the Gut-Brain-Axis (GBA). This axis represents the bidirectional communication pathway linking the nervous system and the immune system, thereby coordinating the body's response to both internal and external stressors. It is also through this pathway that environmental insults can translate into central nervous system (CNS) dysfunction. This paper argues that MNPs exposure poses an alarming neurological risk by facilitating the particles' access to the brain, either directly or indirectly. Once in the CNS, these particles can trigger a sustained, non-resolving state of neuroinflammation via persistent microglial activation—ultimately resulting in cognitive and behavioral deficits.
 
@@ -73,27 +86,27 @@ The CNS has a sophisticated shield called the Blood-Brain Barrier (BBB) that sep
 
 ## Translocation Hypotheses
 
-There are many hypotheses regarding the MNPs' route through the BBB. One such route is paracellular diffusion, which in theory could allow even smallest nanoplastic particles to pass, although this pathway is heavily restricted [@campbellObjectiveAssessmentNanoparticle2012; @winiarskaPotentialImpactNano2024]. A more probable mechanism is endocytosis—where NPs are internalized by the brain endothelial cells and subsequently exocytosed into the brain interstitial fluid [@hamedNeurotoxicEffectsDifferent2022]. A third, highly discussed hypothesis is the "Trojan Horse effect". This scenario presumes that MNPs are first phagocytized by circulating immune cells, which then act as vectors to carry them across the BBB [@liNewEvidenceMechanisms2025].
+There are many hypotheses regarding the MNPs' route through the BBB. One such route is paracellular diffusion, which in theory could allow even smallest nanoplastic particles to pass, although this pathway is heavily restricted [@campbellObjectiveAssessmentNanoparticle2012; @winiarskaPotentialImpactNano2024]. A more probable mechanism is endocytosis, where NPs are internalized by the brain endothelial cells and subsequently exocytosed into the brain interstitial fluid [@hamedNeurotoxicEffectsDifferent2022]. A third, highly discussed hypothesis is the "Trojan Horse effect". This scenario presumes that MNPs are first phagocytized by circulating immune cells, which then act as vectors to carry them across the BBB [@liNewEvidenceMechanisms2025].
 
 ## Associated Toxicants
 
-A critical factor that exacerbates MNP-related neurotoxicity is associated toxicants. MNPs, due to their high surface-to-volume ratio, readily absorb chemical additives and environmental pollutants, (e.g., benzo\[a\]pyrene, okadaic acid) [@yanPolystyreneNanoplasticsPromote2023]. These chemicals also have the capability to disrupt the BBB and impair tight junction integrity, thereby allowing the plastic particles easier access to the brain tissue and synergizing the overall neurotoxic effect. [@chengEffectsAdsorbedBenzoapyrene2023]
+A critical factor that exacerbates MNP-related neurotoxicity is associated toxicants. MNPs, due to their high surface-to-volume ratio, readily absorb chemical additives and environmental pollutants, e.g., benzo\[a\]pyrene, and okadaic acid [@yanPolystyreneNanoplasticsPromote2023]. These chemicals also have the capability to disrupt the BBB and impair tight junction integrity, thereby allowing the plastic particles easier access to the brain tissue and synergizing the overall neurotoxic effect. [@chengEffectsAdsorbedBenzoapyrene2023].
 
 # Microglial Activation and Neuroinflammation
 
 ## The Role of Microglia
 
-Microglial cells are the brain's resident macrophages and the primary immune cells of the CNS. In their resting state, microglia adopt a branched morphology, actively surveying the microenvironment for pathogens, damaged cells, or misfolded proteins [@wakeFunctionsMicrogliaCentral2011]. When activated, these cells will rapidly undergo functional and morphological transformation, proliferate, migrate to the injury site, and engage in immunological activies—i.e., phagocytosis, antigen presentation, and the release of signaling molecules [@yangRoleMicrogliaCentral2010]. @fig-microglia-states showcases different transformations of microglial cells. The neuroinflammation is marked by chronic, uncontrolled activation of cells like microglia, which leads to persistent neurotoxicity and neuronal damage [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].
+Microglial cells are the brain's resident macrophages and the primary immune cells of the CNS. In their resting state, microglia adopt a branched morphology, actively surveying the microenvironment for pathogens, damaged cells, or misfolded proteins [@wakeFunctionsMicrogliaCentral2011]. When activated, these cells will rapidly undergo functional and morphological transformation, proliferate, migrate to the injury site, and engage in immunological activities—i.e., phagocytosis, antigen presentation, and the release of signaling molecules [@yangRoleMicrogliaCentral2010]. @fig-microglia-states showcases different transformations of microglial cells. The neuroinflammation is marked by chronic, uncontrolled activation of cells like microglia, which leads to persistent neurotoxicity and neuronal damage [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].
 
 ![**Different Activation States of Microglia**. Microglia experience morphologic and phenotypic/functional changes upon activation. Shown in this drawing are Disease-Associated Microglia (DAMs), Injury-Responsive Microglia (IRMs), and aged microglia, each representing a distinct activation state. Reprinted from Muzio L, Viotti A, Martino G [@muzioMicrogliaNeuroinflammationNeurodegeneration2021].](photos/microglia_states.jpg){#fig-microglia-states width=6.5in fig-align="center"}
 
 ## Direct Activation Mechanism
 
-One primary hypothesized mechanism involves the direct interaction of MNPs with microglia. As discussed in the previous section, NPs are believed capable of crossing the BBB and being taken up via phagocytosis. Being non-degradable, these particles persist within the microglial lysosome, which leads to a phenomenon coined "frustrated phagocytosis" [@ishidaLivecellImagingMacrophage2019]. The inability to clear the foreign material results in chronic lysosomal stress and damage—akin to choking themselves to death [@mularskiObservingFrustratedPhagocytosis2018]. Persistent internal stress like this drives a sustained microglial activation state that remains even in the absence of a live pathogen.
+One primary hypothesized mechanism involves the direct interaction of MNPs with microglia. As discussed in the previous section, NPs are believed to be capable of crossing the BBB and being taken up via phagocytosis. Being non-degradable, these particles persist within the microglial lysosome, which leads to a phenomenon coined "frustrated phagocytosis" [@ishidaLivecellImagingMacrophage2019]. The inability to clear the foreign material results in chronic lysosomal stress and damage—akin to choking themselves to death [@mularskiObservingFrustratedPhagocytosis2018]. Persistent internal stress like this drives a sustained microglial activation state that remains even in the absence of a live pathogen.
 
 ## Inflammasome Pathway
 
-As a direct consequence of frustrated phagocytosis, an important inflammatory cascade is triggered: the NLRP3 Inflammasome. This complex is an intracellular receptor that senses danger signals, such as lysosomal rupture and the formation of reactive oxygen species—which are both outcomes of MP/NP internalisation. Activation of the NLRP3 inflammasome leads to the cleavage of pro-caspase-1 into active caspase-1. This activated enzyme, in turn, causes the maturation and release of pro-inflammatory cytokines, namely, Interleukin-1$\beta$ (IL-1$\beta$) and Interleukin-18 (IL-18) [@harrisonChiasmaRochePartner2013; @matousekChronicIL1vmediatedNeuroinflammation2012]. These cytokines further propagate the inflammatory signal, recruiting additional immune cells and intensifying the neuroinflammatory cycle—contributing directly to neuronal injury [@delantoniMaxillofacialInflammationsVisualized2023].
+As a direct consequence of frustrated phagocytosis, an important inflammatory cascade is triggered: the NLRP3 Inflammasome. This complex is an intracellular receptor that senses danger signals, such as lysosomal rupture and the formation of reactive oxygen species, which are both outcomes of MP/NP internalisation. Activation of the NLRP3 inflammasome leads to the cleavage of pro-caspase-1 into active caspase-1. This activated enzyme, in turn, causes the maturation and release of pro-inflammatory cytokines, namely, Interleukin-1$\beta$ (IL-1$\beta$) and Interleukin-18 (IL-18) [@harrisonChiasmaRochePartner2013; @matousekChronicIL1vmediatedNeuroinflammation2012]. These cytokines further propagate the inflammatory signal, recruiting additional immune cells and intensifying the neuroinflammatory cycle—contributing directly to neuronal injury [@delantoniMaxillofacialInflammationsVisualized2023].
 
 ## Indirect Disruption via Gut-Brain Axis
 
@@ -109,9 +122,9 @@ Chronic microglial activation, sustained by MNP presence or systemic inflammator
 
 ## HPA Axis and Stress Hormones
 
-Another significant systemic consequence of chronic inflammation is the disruption of the hypothalamic-pituitary-adrenal (HPA) axis, often termed the Stress Axis. Pro-inflammatory cytokines released during MNP exposure, such as TNF-$\alpha$ and IL-6, are known stimulators of the HPA axis—which lead to increased production and release of glucocorticoids, namely, cortisol [@jeonNeuroinflammationCytokineAbnormality2016]. While an initial cortial surge is protective, exposure to inflammation signals over a long time period results in HPA dysregulation—which manifests as either hyper-activation or, paradoxically, a state of hyporesponsiveness.This impaired feedback mechanism compromises the body’s ability to manage stress and inflammation effectively, becoming a debilitating cycle where chronic inflammation leads to HPA axis exhaustion, which in turn further impairs the immune system’s ability to self-regulate [@bertolloHypothalamuspituitaryadrenalGutbrainAxes2025]; [@nunezChronicStressAutoimmunity2025]. This cycle can be seen in @fig-acute-chronic-HPA.
+Another significant systemic consequence of chronic inflammation is the disruption of the hypothalamic-pituitary-adrenal (HPA) axis, often termed the Stress Axis. Pro-inflammatory cytokines released during MNP exposure, such as TNF-$\alpha$ and IL-6, are known stimulators of the HPA axis, which lead to increased production and release of glucocorticoids, namely, cortisol [@jeonNeuroinflammationCytokineAbnormality2016]. While an initial cortial surge is protective, exposure to inflammation signals over a long time period results in HPA dysregulation—which manifests as either hyper-activation or, paradoxically, a state of hyporesponsiveness. This impaired feedback mechanism compromises the body’s ability to manage stress and inflammation effectively, becoming a debilitating cycle where chronic inflammation leads to HPA axis exhaustion, which in turn further impairs the immune system’s ability to self-regulate [@bertolloHypothalamuspituitaryadrenalGutbrainAxes2025; @nunezChronicStressAutoimmunity2025]. This cycle can be seen in @fig-acute-chronic-HPA.
 
-![**MNP-driven HPA Axis Dysregulation Cycle**. The shift from a protective acute stress response (Left) to chronic endocrine and immune dysregulation (Right), a process exacerbated by sustained inflammatory signals from MNP exposure. During acute stress, the HPA axis releases Cortisol which maintains immune homeostasis by restraining pro-inflammatory cytokines (IL-1$\beta$, IL-6, TNF-$\alpha$, IL-17) However, chronic MNP-induced inflammation leads to persistent HPA activation, resulting in Glucocorticoid Receptor resistance. This impaired feedback loop prevents effective immune suppression, thereby sustaining high levels of pro-inflammatory cytokines, driving chronic inflammation—and potentially autoimmunity. Reprinted from Nunez SG, Rabelo SP, Subotic N, Caruso JW, Knezevic NN [@nunezChronicStressAutoimmunity2025].](photos/acute-chronic-HPA.png){#fig-acute-chronic-HPA width=6.5in fig-align="center"}
+![**MNP-driven HPA Axis Dysregulation Cycle**. The shift from a protective acute stress response (Left) to chronic endocrine and immune dysregulation (Right), a process exacerbated by sustained inflammatory signals from MNP exposure. During acute stress, the HPA axis releases Cortisol which maintains immune homeostasis by restraining pro-inflammatory cytokines (IL-1$\beta$, IL-6, TNF-$\alpha$, IL-17). However, chronic MNP-induced inflammation leads to persistent HPA activation, resulting in Glucocorticoid Receptor resistance. This impaired feedback loop prevents effective immune suppression, thereby sustaining high levels of pro-inflammatory cytokines, driving chronic inflammation—and potentially autoimmunity. Reprinted from Nunez SG, Rabelo SP, Subotic N, Caruso JW, Knezevic NN [@nunezChronicStressAutoimmunity2025].](photos/acute-chronic-HPA.png){#fig-acute-chronic-HPA width=6.5in fig-align="center"}
 
 
 ## Treatment and Prevention Angle
@@ -120,7 +133,7 @@ Micro- and nanoplastic (MNP) exposure is a modern, global issue that requires an
 
 ## Conclusion & Future Research
 
-The evidence and analysis presented here demonstrates that MNPs are more than environmental contaminants—they are also significant neurotoxic agents, capable of long-term harm to both humans and animals alike. Their ubiquitous presence, combined with the alarming capability of nanoplastics to traverse biological barriers establishes a grave threat to CNS health. A sustained neuroinflammatory state caused by frustrated phagocytosis, NLRP3 inflammasome activation, and HPA axis dysregulation manifests as behavioral deficits and cognitive impairment. This proves that MNP exposure extends far beyond localized cellular damage.
+The evidence and analysis presented here demonstrate that MNPs are more than environmental contaminants—they are also significant neurotoxic agents, capable of long-term harm to both humans and animals alike. Their ubiquitous presence, combined with the alarming capability of nanoplastics to traverse biological barriers establishes a grave threat to CNS health. A sustained neuroinflammatory state caused by frustrated phagocytosis, NLRP3 inflammasome activation, and HPA axis dysregulation manifests as behavioral deficits and cognitive impairment. This proves that MNP exposure extends far beyond localized cellular damage.
 
 Moving forward, a multi-disciplinary approach is crucial to translate these mechanistic findings into actionable public health strategies. Future research should work on large-scale human epidemiological studies to correlate MNP body burden with specific neurological and cognitive outcomes. There is also an urgent need for targeted therapeutic development focused on decoupling inflammatory signaling from the presence of non-degradable particles; BBB-permeable NLRP3 Inflammasome inhibitors should be a good starting point. Further mechanistic work must precisely characterize the inflammatory signals that transmit neurotoxicity from the peripheral gut to the CNS, in order to identify specific signaling molecules that trigger secondary microglial activation. Finally, to accurately reflect real-world exposure, future investigations must move beyond pristine polystyrene and prioritize the toxicity assessment of environmentally-aged and chemically-altered MNPs. While targeted biomedical interventions offer hope, the most effective long-term solution is proactive, globally-coordinated prevention to dramatically reduce plastic production and environmental dissemination.
 
